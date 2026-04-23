@@ -113,7 +113,7 @@ export default function BrandCampaign() {
         <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden' }}>
   <iframe 
     style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
-    src="https://j1qtst3djmbj3ipl.private.blob.vercel-storage.com/motion2.mp4" 
+    src="https://we7axmlpl5eksxob.public.blob.vercel-storage.com/motion2.mp4" 
     frameBorder="0"
     allow="autoplay; encrypted-media"
     allowFullScreen
