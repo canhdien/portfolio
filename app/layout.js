@@ -1,6 +1,7 @@
 // Use ./ instead of @ to look in the current project structure
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { Analytics } from '@vercel/analytics/react';
 
 export default function RootLayout({ children }) {
   // Global container style to match your original 'container' class
@@ -23,7 +24,9 @@ export default function RootLayout({ children }) {
           </main>
           <Footer />
         </div>
+        {/* Analytics nằm ở đây, trước khi đóng thẻ body là đẹp nhất */}
+        <Analytics /> 
       </body>
     </html>
-  );
+  )
 }
