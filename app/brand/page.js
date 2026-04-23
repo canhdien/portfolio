@@ -112,7 +112,7 @@ export default function BrandCampaign() {
         <h2 style={{ fontSize: '32px', marginBottom: '30px' }}>Commercial Video</h2>
         <div style={{ borderRadius: '24px', overflow: 'hidden', background: '#000', boxShadow: '0 20px 40px rgba(0,0,0,0.2)' }}>
           <video autoPlay loop muted playsInline style={{ width: '100%', display: 'block' }}>
-            <source src="/Motion2.MP4" type="video/mp4" />
+            <source src="/motion2.mp4" type="video/mp4" />
           </video>
         </div>
       </section>
