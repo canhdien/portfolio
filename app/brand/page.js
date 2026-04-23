@@ -110,11 +110,16 @@ export default function BrandCampaign() {
       {/* 4. Commercial Video */}
       <section style={sectionStyle}>
         <h2 style={{ fontSize: '32px', marginBottom: '30px' }}>Commercial Video</h2>
-        <div style={{ borderRadius: '24px', overflow: 'hidden', background: '#000', boxShadow: '0 20px 40px rgba(0,0,0,0.2)' }}>
-          <video autoPlay loop muted playsInline style={{ width: '100%', display: 'block' }}>
-            <source src="/motion2.mp4" type="video/mp4" />
-          </video>
-        </div>
+        <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden' }}>
+  <iframe 
+    style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+    src="https://youtu.be/Ci54836hrZI"
+    frameBorder="0"
+    allow="autoplay; encrypted-media"
+    allowFullScreen
+    title="Commercial Video"
+  />
+</div>
       </section>
 
       {/* 5. Project Mockups */}
