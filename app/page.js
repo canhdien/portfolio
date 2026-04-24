@@ -1,56 +1,46 @@
+import Link from 'next/link';
+
 export default function Home() {
-  const heroStyle = {
-    textAlign: 'center',
-    padding: '120px 0 80px',
-    maxWidth: '900px',
-    margin: '0 auto'
-  };
-
-  const itemStyle = {
-    display: 'flex',
-    height: '550px',
-    marginBottom: '40px',
-    borderRadius: '24px',
-    overflow: 'hidden',
-    backgroundColor: '#f5f5f5'
-  };
-
   return (
-    <>
-      <header style={heroStyle}>
-        <h1 style={{ fontSize: '56px', fontWeight: 700, letterSpacing: '-2px', marginBottom: '24px' }}>Tin Canh Dien Nguyen</h1>
-        <p style={{ fontSize: '19px', color: '#707070', lineHeight: '1.5' }}>
-          Visuals define how the world operates today. Through a comprehensive visual identity, I aim to offer new perspectives and bring those visions to life.
-        </p>
-      </header>
-
-      <section style={{ paddingBottom: '100px' }}>
-        {/* Manchester United Project */}
-        <div style={itemStyle}>
-          <div style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: '60px' }}>
-            <h3 style={{ fontSize: '26px', marginBottom: '8px' }}>Manchester United Poster Series</h3>
-            <span style={{ color: '#707070', fontSize: '14px' }}>2026</span>
-          </div>
-          <div style={{ flex: 1.2 }}>
-            <a href="/poster">
-              <img src="/poster-mockup3.jpg" alt="Work" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-            </a>
-          </div>
-        </div>
-
-        {/* Motion Energy Project (Reverse) */}
-        <div style={{ ...itemStyle, flexDirection: 'row-reverse' }}>
-          <div style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: '60px' }}>
-            <h3 style={{ fontSize: '26px', marginBottom: '8px' }}>Motion Energy</h3>
-            <span style={{ color: '#707070', fontSize: '14px' }}>2026</span>
-          </div>
-          <div style={{ flex: 1.2 }}>
-            <a href="/brand">
-              <img src="/mockup2.png" alt="Work" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-            </a>
-          </div>
+    <div className="pageRoot">
+      <section className="heroSection">
+        <div className="heroCard">
+          <h1 className="heroHeadline">Visuals define how the world operates today</h1>
+          <p className="heroText">
+            I’m Tin Canh Dien Nguyen — a visual designer who builds bold brand worlds, cinematic poster systems, and motion-led campaigns that feel polished and powerful.
+          </p>
         </div>
       </section>
-    </>
+
+      <section className="featuredGrid">
+        <article className="showcaseCard">
+          <div className="imageWrapper">
+            <img src="/poster-mockup3.jpg" alt="Manchester United Poster Series" />
+          </div>
+          <div className="cardBody">
+            <span className="showcaseLabel">Poster Series</span>
+            <h2 className="showcaseTitle">Manchester United</h2>
+            <p className="showcaseCopy">
+              A strong visual series that merges football passion with dynamic composition, bold typography, and atmosphere.
+            </p>
+            <Link href="/poster" className="buttonAccent">View full project</Link>
+          </div>
+        </article>
+
+        <article className="showcaseCard">
+          <div className="imageWrapper">
+            <img src="/mockup2.png" alt="Motion Energy Brand Campaign" />
+          </div>
+          <div className="cardBody">
+            <span className="showcaseLabel">Brand Identity</span>
+            <h2 className="showcaseTitle">Motion Energy</h2>
+            <p className="showcaseCopy">
+              A campaign concept exploring momentum, speed, and athletic energy through refined visual systems and motion-ready branding.
+            </p>
+            <Link href="/brand" className="buttonAccent">View full project</Link>
+          </div>
+        </article>
+      </section>
+    </div>
   );
 }
