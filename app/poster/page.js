@@ -168,7 +168,7 @@ export default function PosterPage() {
               <h4>rough</h4>
               <div className="process-images">
                 <div className="process-img-wrapper">
-                  <ImageModal src="/creativeprocess4.jpg" alt="Rough Sketch" />
+                  <ImageModal src="/creativeprocess4.JPG" alt="Rough Sketch" />
                 </div>
               </div>
             </div>
